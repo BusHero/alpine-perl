@@ -6,8 +6,7 @@ RUN apk update \
 	wget \
 	perl \
 	perl-dev \
-	alpine-sdk \
-	make
+	alpine-sdk
 
 RUN curl -L http://cpanmin.us | perl - App::cpanminus
 RUN cpanm XString
