@@ -9,4 +9,7 @@ RUN apk update \
 	alpine-sdk
 
 RUN curl -L http://cpanmin.us | perl - App::cpanminus
-RUN cpanm XString
+RUN cpanm Log::Dispatch::File
+RUN cpanm YAML::Tiny
+RUN cpanm File::HomeDir
+RUN cpanm Unicode::GCString
